@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pycoder"
-version = "0.1.1"
+version = "0.1.2"
 description = "A flexible AI agent management system with support for multiple LLM providers"
 authors = [
     {name = "Yigal Weinberger", email = "yigalw10@gmail.com"},
