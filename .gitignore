@@ -29,3 +29,6 @@ build/
 
 # History files
 .history/
+
+# Publishing scripts
+make_pycoder_public.py
