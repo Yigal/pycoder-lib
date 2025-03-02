@@ -1,0 +1,330 @@
+2025-03-02 13:40:27,149 - server_tester - INFO - Starting agents server...
+2025-03-02 13:40:27,151 - server_tester - INFO - Waiting for server to start...
+2025-03-02 13:40:30,177 - server_tester - INFO - Server is running
+2025-03-02 13:40:30,177 - server_tester - INFO - Testing root endpoint...
+2025-03-02 13:40:30,179 - server_tester - INFO - Server info: {
+  "name": "AgentMaker API",
+  "version": "1.0.0",
+  "status": "running",
+  "model": "anthropic/claude-3-7-sonnet-20250219"
+}
+2025-03-02 13:40:30,179 - server_tester - INFO - Testing generate endpoint...
+2025-03-02 13:40:30,620 - server_tester - ERROR - Error testing generate endpoint: 500 Server Error: Internal Server Error for url: http://localhost:6002/generate
+2025-03-02 13:40:30,620 - server_tester - INFO - Testing create agent endpoint...
+2025-03-02 13:40:30,626 - server_tester - ERROR - Error creating agent: 500 Server Error: Internal Server Error for url: http://localhost:6002/agents
+2025-03-02 13:40:30,626 - server_tester - INFO - All tests completed
+2025-03-02 13:40:30,626 - server_tester - INFO - Stopping server...
+2025-03-02 13:40:30,626 - server_tester - ERROR - Server stderr: /opt/anaconda3/lib/python3.11/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+2025-03-02 13:40:29,018 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1340/logs/server.log
+2025-03-02 13:40:29,018 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+/Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/agents_server.py:136: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Will watch for changes in these directories: ['/Users/yigalweinberger/Documents/Code/coding_utils/servers/agents']
+ERROR:    [Errno 48] Address already in use
+
+2025-03-02 13:40:30,626 - server_tester - INFO - Server stopped
+2025-03-02 13:41:42,581 - server_tester - INFO - Starting agents server...
+2025-03-02 13:41:42,582 - server_tester - INFO - Waiting for server to start...
+2025-03-02 13:41:45,615 - server_tester - INFO - Server is running
+2025-03-02 13:41:45,615 - server_tester - INFO - Testing root endpoint...
+2025-03-02 13:41:45,623 - server_tester - INFO - Server info: {
+  "name": "AgentMaker API",
+  "version": "1.0.0",
+  "status": "running",
+  "model": "anthropic/claude-3-7-sonnet-20250219"
+}
+2025-03-02 13:41:45,624 - server_tester - INFO - Testing generate endpoint...
+2025-03-02 13:41:45,626 - server_tester - ERROR - Error testing generate endpoint: 500 Server Error: Internal Server Error for url: http://localhost:6003/generate
+2025-03-02 13:41:45,626 - server_tester - INFO - Testing create agent endpoint...
+2025-03-02 13:41:45,629 - server_tester - INFO - Created agent: {
+  "agent_id": "test_agent_542867af",
+  "name": "Test Agent",
+  "status": "created"
+}
+2025-03-02 13:41:45,629 - server_tester - INFO - All tests completed
+2025-03-02 13:41:45,629 - server_tester - INFO - Stopping server...
+2025-03-02 13:41:46,292 - server_tester - INFO - Server stdout: INFO:     127.0.0.1:54051 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54053 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54055 - "POST /generate HTTP/1.1" 500 Internal Server Error
+INFO:     127.0.0.1:54057 - "POST /agents HTTP/1.1" 200 OK
+
+2025-03-02 13:41:46,292 - server_tester - ERROR - Server stderr: /opt/anaconda3/lib/python3.11/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+2025-03-02 13:41:44,004 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1341/logs/server.log
+2025-03-02 13:41:44,004 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+/Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/agents_server.py:136: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Will watch for changes in these directories: ['/Users/yigalweinberger/Documents/Code/coding_utils/servers/agents']
+INFO:     Uvicorn running on http://0.0.0.0:6003 (Press CTRL+C to quit)
+INFO:     Started reloader process [93645] using WatchFiles
+/opt/anaconda3/lib/python3.11/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+2025-03-02 13:41:44,997 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1341/logs/server.log
+2025-03-02 13:41:44,997 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+2025-03-02 13:41:45,029 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1341/logs/server.log
+2025-03-02 13:41:45,030 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+INFO:     Started server process [93707]
+INFO:     Waiting for application startup.
+2025-03-02 13:41:45,033 - agent_server - INFO - Starting AgentMaker API server
+2025-03-02 13:41:45,033 - agent_server - INFO - Runtime directory: /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1341
+2025-03-02 13:41:45,033 - agent_server - INFO - Log file: all_runtimes/runtime_20250302-1341/logs/server.log
+2025-03-02 13:41:45,033 - agent_server - INFO - Running with model: anthropic/claude-3-7-sonnet-20250219
+INFO:     Application startup complete.
+2025-03-02 13:41:45,626 - agent_server - ERROR - Error during generation: 1 validation error for AgentResult
+prompt
+  Field required [type=missing, input_value={'content': "Mock respons...amp': 1740915705.626028}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.4/v/missing
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [93707]
+INFO:     Stopping reloader process [93645]
+
+2025-03-02 13:41:46,292 - server_tester - INFO - Server stopped
+2025-03-02 13:42:21,370 - server_tester - INFO - Starting agents server...
+2025-03-02 13:42:21,372 - server_tester - INFO - Waiting for server to start...
+2025-03-02 13:42:24,396 - server_tester - INFO - Server is running
+2025-03-02 13:42:24,396 - server_tester - INFO - Testing root endpoint...
+2025-03-02 13:42:24,398 - server_tester - INFO - Server info: {
+  "name": "AgentMaker API",
+  "version": "1.0.0",
+  "status": "running",
+  "model": "anthropic/claude-3-7-sonnet-20250219"
+}
+2025-03-02 13:42:24,399 - server_tester - INFO - Testing generate endpoint...
+2025-03-02 13:42:24,401 - server_tester - INFO - Generated response: {
+  "content": "Mock response to: What's the capital of France?...",
+  "model": "anthropic/claude-3-7-sonnet-20250219",
+  "timestamp": 1740915744.4009569,
+  "prompt": "What's the capital of France?",
+  "metadata": null
+}
+2025-03-02 13:42:24,401 - server_tester - INFO - Testing create agent endpoint...
+2025-03-02 13:42:24,403 - server_tester - INFO - Created agent: {
+  "agent_id": "test_agent_16f9602f",
+  "name": "Test Agent",
+  "status": "created"
+}
+2025-03-02 13:42:24,403 - server_tester - INFO - All tests completed
+2025-03-02 13:42:24,403 - server_tester - INFO - Stopping server...
+2025-03-02 13:42:25,069 - server_tester - INFO - Server stdout: INFO:     127.0.0.1:54179 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54181 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54183 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54185 - "POST /agents HTTP/1.1" 200 OK
+
+2025-03-02 13:42:25,069 - server_tester - ERROR - Server stderr: /opt/anaconda3/lib/python3.11/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+2025-03-02 13:42:22,735 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1342/logs/server.log
+2025-03-02 13:42:22,735 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+/Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/agents_server.py:144: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Will watch for changes in these directories: ['/Users/yigalweinberger/Documents/Code/coding_utils/servers/agents']
+INFO:     Uvicorn running on http://0.0.0.0:6003 (Press CTRL+C to quit)
+INFO:     Started reloader process [95721] using WatchFiles
+/opt/anaconda3/lib/python3.11/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+2025-03-02 13:42:23,850 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1342/logs/server.log
+2025-03-02 13:42:23,850 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+2025-03-02 13:42:23,874 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1342/logs/server.log
+2025-03-02 13:42:23,874 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+INFO:     Started server process [95801]
+INFO:     Waiting for application startup.
+2025-03-02 13:42:23,877 - agent_server - INFO - Starting AgentMaker API server
+2025-03-02 13:42:23,877 - agent_server - INFO - Runtime directory: /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1342
+2025-03-02 13:42:23,877 - agent_server - INFO - Log file: all_runtimes/runtime_20250302-1342/logs/server.log
+2025-03-02 13:42:23,877 - agent_server - INFO - Running with model: anthropic/claude-3-7-sonnet-20250219
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [95801]
+INFO:     Stopping reloader process [95721]
+
+2025-03-02 13:42:25,069 - server_tester - INFO - Server stopped
+2025-03-02 13:43:23,953 - server_tester - INFO - Starting agents server...
+2025-03-02 13:43:23,954 - server_tester - INFO - Waiting for server to start...
+2025-03-02 13:43:27,022 - server_tester - INFO - Server is running
+2025-03-02 13:43:27,022 - server_tester - INFO - Testing root endpoint...
+2025-03-02 13:43:27,024 - server_tester - INFO - Server info: {
+  "name": "AgentMaker API",
+  "version": "1.0.0",
+  "status": "running",
+  "model": "anthropic/claude-3-7-sonnet-20250219"
+}
+2025-03-02 13:43:27,024 - server_tester - INFO - Testing generate endpoint...
+2025-03-02 13:43:27,027 - server_tester - INFO - Generated response: {
+  "content": "Mock response to: What's the capital of France?...",
+  "model": "anthropic/claude-3-7-sonnet-20250219",
+  "timestamp": 1740915807.027256,
+  "prompt": "What's the capital of France?",
+  "metadata": null
+}
+2025-03-02 13:43:27,027 - server_tester - INFO - Testing create agent endpoint...
+2025-03-02 13:43:27,030 - server_tester - ERROR - Error testing create agent endpoint: <Response [422]>
+2025-03-02 13:43:27,030 - server_tester - INFO - All tests completed
+2025-03-02 13:43:27,030 - server_tester - INFO - Stopping server...
+2025-03-02 13:43:27,655 - server_tester - INFO - Server stdout: INFO:     127.0.0.1:54372 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54374 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54376 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54378 - "POST /agents HTTP/1.1" 422 Unprocessable Entity
+
+2025-03-02 13:43:27,655 - server_tester - ERROR - Server stderr: /opt/anaconda3/lib/python3.11/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+2025-03-02 13:43:25,513 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1343/logs/server.log
+2025-03-02 13:43:25,513 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+/Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/agents_server.py:144: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Will watch for changes in these directories: ['/Users/yigalweinberger/Documents/Code/coding_utils/servers/agents']
+INFO:     Uvicorn running on http://0.0.0.0:6003 (Press CTRL+C to quit)
+INFO:     Started reloader process [99077] using WatchFiles
+/opt/anaconda3/lib/python3.11/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+2025-03-02 13:43:26,527 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1343/logs/server.log
+2025-03-02 13:43:26,527 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+2025-03-02 13:43:26,555 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1343/logs/server.log
+2025-03-02 13:43:26,555 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+INFO:     Started server process [99147]
+INFO:     Waiting for application startup.
+2025-03-02 13:43:26,559 - agent_server - INFO - Starting AgentMaker API server
+2025-03-02 13:43:26,559 - agent_server - INFO - Runtime directory: /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1343
+2025-03-02 13:43:26,559 - agent_server - INFO - Log file: all_runtimes/runtime_20250302-1343/logs/server.log
+2025-03-02 13:43:26,559 - agent_server - INFO - Running with model: anthropic/claude-3-7-sonnet-20250219
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [99147]
+INFO:     Stopping reloader process [99077]
+
+2025-03-02 13:43:27,655 - server_tester - INFO - Server stopped
+2025-03-02 13:44:16,889 - server_tester - INFO - Starting agents server...
+2025-03-02 13:44:16,891 - server_tester - INFO - Waiting for server to start...
+2025-03-02 13:44:19,920 - server_tester - INFO - Server is running
+2025-03-02 13:44:19,920 - server_tester - INFO - Testing root endpoint...
+2025-03-02 13:44:19,921 - server_tester - INFO - Server info: {
+  "name": "AgentMaker API",
+  "version": "1.0.0",
+  "status": "running",
+  "model": "anthropic/claude-3-7-sonnet-20250219"
+}
+2025-03-02 13:44:19,922 - server_tester - INFO - Testing generate endpoint...
+2025-03-02 13:44:19,923 - server_tester - INFO - Generated response: {
+  "content": "Mock response to: What's the capital of France?...",
+  "model": "anthropic/claude-3-7-sonnet-20250219",
+  "timestamp": 1740915859.923279,
+  "prompt": "What's the capital of France?",
+  "metadata": null
+}
+2025-03-02 13:44:19,923 - server_tester - INFO - Testing create agent endpoint...
+2025-03-02 13:44:19,925 - server_tester - INFO - Created agent: {
+  "agent_id": "test_agent_56a54cd0",
+  "name": "Test Agent",
+  "status": "created"
+}
+2025-03-02 13:44:19,925 - server_tester - INFO - Testing list agents endpoint...
+2025-03-02 13:44:19,926 - server_tester - INFO - Agent list: {
+  "agents": [
+    {
+      "agent_id": "test_agent_56a54cd0",
+      "name": "Test Agent",
+      "provider": "anthropic",
+      "model": "claude-3-haiku-20240307",
+      "creation_time": 1740915859.924771
+    }
+  ]
+}
+2025-03-02 13:44:19,926 - server_tester - INFO - Testing run agent endpoint...
+2025-03-02 13:44:19,927 - server_tester - INFO - Agent response: {
+  "content": "Mock response from agent test_agent_56a54cd0 to: Tell me a short joke...",
+  "model": "anthropic/claude-3-haiku-20240307",
+  "timestamp": 1740915859.9272928
+}
+2025-03-02 13:44:19,927 - server_tester - INFO - Testing delete agent endpoint...
+2025-03-02 13:44:19,929 - server_tester - INFO - Delete response: {
+  "message": "Agent test_agent_56a54cd0 deleted successfully"
+}
+2025-03-02 13:44:19,931 - server_tester - INFO - Agent successfully deleted and removed from list
+2025-03-02 13:44:19,931 - server_tester - INFO - All tests completed
+2025-03-02 13:44:19,931 - server_tester - INFO - Stopping server...
+2025-03-02 13:44:20,543 - server_tester - INFO - Server stdout: INFO:     127.0.0.1:54560 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54562 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54564 - "POST /generate HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54566 - "POST /agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54568 - "GET /agents HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54570 - "POST /agents/test_agent_56a54cd0/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54572 - "DELETE /agents/test_agent_56a54cd0 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54574 - "GET /agents HTTP/1.1" 200 OK
+
+2025-03-02 13:44:20,543 - server_tester - ERROR - Server stderr: /opt/anaconda3/lib/python3.11/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+2025-03-02 13:44:18,418 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1344/logs/server.log
+2025-03-02 13:44:18,418 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+/Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/agents_server.py:146: DeprecationWarning: 
+        on_event is deprecated, use lifespan event handlers instead.
+
+        Read more about it in the
+        [FastAPI docs for Lifespan Events](https://fastapi.tiangolo.com/advanced/events/).
+        
+  @app.on_event("startup")
+INFO:     Will watch for changes in these directories: ['/Users/yigalweinberger/Documents/Code/coding_utils/servers/agents']
+INFO:     Uvicorn running on http://0.0.0.0:6003 (Press CTRL+C to quit)
+INFO:     Started reloader process [2285] using WatchFiles
+/opt/anaconda3/lib/python3.11/site-packages/pydantic/_internal/_fields.py:128: UserWarning: Field "model_name" has conflict with protected namespace "model_".
+
+You may be able to resolve this warning by setting `model_config['protected_namespaces'] = ()`.
+  warnings.warn(
+2025-03-02 13:44:19,532 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1344/logs/server.log
+2025-03-02 13:44:19,532 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+2025-03-02 13:44:19,558 - agent_server - INFO - Server starting, logging to /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1344/logs/server.log
+2025-03-02 13:44:19,559 - agent_server - INFO - Loaded agent_maker definition from agents_definitions/agent_maker.json
+INFO:     Started server process [2341]
+INFO:     Waiting for application startup.
+2025-03-02 13:44:19,562 - agent_server - INFO - Starting AgentMaker API server
+2025-03-02 13:44:19,562 - agent_server - INFO - Runtime directory: /Users/yigalweinberger/Documents/Code/coding_utils/servers/agents/all_runtimes/runtime_20250302-1344
+2025-03-02 13:44:19,562 - agent_server - INFO - Log file: all_runtimes/runtime_20250302-1344/logs/server.log
+2025-03-02 13:44:19,562 - agent_server - INFO - Running with model: anthropic/claude-3-7-sonnet-20250219
+INFO:     Application startup complete.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [2341]
+INFO:     Stopping reloader process [2285]
+
+2025-03-02 13:44:20,543 - server_tester - INFO - Server stopped
