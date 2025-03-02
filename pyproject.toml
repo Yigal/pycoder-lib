@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pycoder"
-version = "0.1.0"
+version = "0.1.1"
 description = "A flexible AI agent management system with support for multiple LLM providers"
 authors = [
     {name = "Yigal Weinberger", email = "yigalw10@gmail.com"},
@@ -23,6 +23,8 @@ dependencies = [
     "fastapi>=0.103.1",
     "pydantic>=2.3.0",
     "python-dotenv>=1.0.0",
+    "uvicorn>=0.23.0",
+    "requests>=2.31.0"
 ]
 
 [project.optional-dependencies]
