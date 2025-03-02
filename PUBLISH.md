@@ -6,11 +6,11 @@ tags: []
 
 # Publishing PyCoder to the World
 
-This document describes how to use the `make_pycoder_public.py` script to publish PyCoder, making it available to everyone.
+This document describes how to use the `.helper_scripts/publish.py` script to publish PyCoder, making it available to everyone.
 
 ## Overview
 
-The `make_pycoder_public.py` script automates the entire process of making PyCoder available to the public, including:
+The `.helper_scripts/publish.py` script automates the entire process of making PyCoder available to the public, including:
 
 1. Package building and validation
 2. Local testing
@@ -42,7 +42,7 @@ These credentials will be used for publishing to PyPI and setting up the GitHub 
 Basic usage to run through the entire process:
 
 ```bash
-python make_pycoder_public.py
+python .helper_scripts/publish.py
 ```
 
 ### Command Line Options
@@ -57,17 +57,17 @@ python make_pycoder_public.py
 
 Publish to TestPyPI only (good for testing):
 ```bash
-python make_pycoder_public.py --skip-pypi --skip-github
+python .helper_scripts/publish.py --skip-pypi --skip-github
 ```
 
 Publish directly to PyPI without testing on TestPyPI first:
 ```bash
-python make_pycoder_public.py --skip-test-pypi
+python .helper_scripts/publish.py --skip-test-pypi
 ```
 
 Setup GitHub repository only (no PyPI publishing):
 ```bash
-python make_pycoder_public.py --skip-test-pypi --skip-pypi
+python .helper_scripts/publish.py --skip-test-pypi --skip-pypi
 ```
 
 ## Workflow

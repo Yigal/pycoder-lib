@@ -32,3 +32,4 @@ build/
 
 # Publishing scripts
 make_pycoder_public.py
+.helper_scripts/
